@@ -1,10 +1,7 @@
 /******************************************************************************
-
-   Welcome to GDB Online.
-   GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby,
-   C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
-   Code, Compile, Run and Debug online from anywhere in world.
-
+  Write a C program that will read two digits from the keyboard and output different
+  logic gates, namely AND, OR, XOR and NOT. Test your program if it produces the
+  correct output by checking the corresponding truth tables.
  *******************************************************************************/
 #include <stdio.h>
 

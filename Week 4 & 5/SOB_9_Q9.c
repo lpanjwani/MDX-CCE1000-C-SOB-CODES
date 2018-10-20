@@ -1,7 +1,6 @@
-/* After Understanding the code,
-   I understand that this code is for
-   Decimal Number to Binary Number Operations
- */
+ /******************************************************************************
+    Decimal Number to Binary Number Operations
+  *******************************************************************************/
 
 
 #include <stdio.h>
