@@ -1,0 +1,19 @@
+in Input A
+sto 92
+in Input B
+sto 93
+in Input B
+sto 94
+// Addition + Store to 958
+lda 92
+add 93
+sto 97
+// Condition Tester
+lda 97
+sub 94
+brp 14
+sto 98
+br 16
+sto 99
+out 
+hlt
