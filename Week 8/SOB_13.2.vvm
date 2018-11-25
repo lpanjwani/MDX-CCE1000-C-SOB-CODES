@@ -1,0 +1,36 @@
+// Sample program to print the
+// square of any integer in the
+// range 1 - 31. Greater value will
+// cause a data overflow (you can
+// try this). Smaller value will
+// cause endless loop (try this
+// too)! Hint: If many iterations (e.g.
+// input > 4), set speed to FAST!
+in Input value to be squared
+sto 99 Store input at 99
+lda 98 Load current sum (top of loop)
+add 99 Add value to sum
+sto 98 Store the sum
+lda 96 Load current index
+add 95 Add 1 to index
+sto 96 Store new index value
+sub 99 Subtract value from index
+brz 11 Jump out if index = value
+br 02 Do it again (bottom of loop)
+// Custom
+sto 96 Store
+lda 97 Load current index
+add 95 Add 1 to index
+sto 97 Store new index value
+sub 99 Subtract value from index
+brz 18 Jump out if index = value
+br 02 Do it again (bottom of loop)
+lda 98 Done looping - load the sum
+out Display the result
+hlt Halt (end of program)
+// Data used by program follows
+*95 Resume loading at address 95
+dat 001 Cube
+dat 000 Constant for counting
+dat 000 Initial index value
+dat 000 Initial sum
