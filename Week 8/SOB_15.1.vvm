@@ -2,7 +2,7 @@ in Input A
 sto 92
 in Input B
 sto 93
-in Input B
+in Input C
 sto 94
 // Addition + Store to 958
 lda 92
@@ -11,9 +11,11 @@ sto 97
 // Condition Tester
 lda 97
 sub 94
-brp 14
+brp 16
+lda 94
+sub 97
 sto 98
-br 16
+br 18
 sto 99
 out 
 hlt
