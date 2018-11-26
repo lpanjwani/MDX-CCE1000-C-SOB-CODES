@@ -1,0 +1,10 @@
+// Program to input two numbers, add
+// them together, and output the result.
+
+in Input first number
+sto 99 Store in box 99
+in Input second number
+add 99 Add value from box 99
+out Output result
+sto 98
+hlt End program

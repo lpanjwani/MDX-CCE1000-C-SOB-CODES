@@ -1,0 +1,20 @@
+in Input A
+sto 91
+in Input B
+sto 92
+// Find Difference & Store
+lda 91
+sub 92
+sto 98
+// Conditional Tester
+lda 98
+brz 12
+lda 95
+out
+br 17
+lda 96
+out
+hlt
+*95 Resume loading at address 95
+dat 001 IF Not Same
+dat 000 IF SAME

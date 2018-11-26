@@ -1,0 +1,20 @@
+in Input A
+sto 91
+in Input B
+sto 92
+// Condition Tester
+lda 91
+sub 92
+brp 10 If A > B, branch to 11
+// IF A < B
+lda 92
+sub 91
+br 12
+// END IF A < B
+// IF A > B Section
+lda 91
+sub 92
+// END A > B Section
+out
+sto 98
+hlt

@@ -1,0 +1,6 @@
+in Input A
+sto 91
+add 91
+add 91
+sto 98
+out
